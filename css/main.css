@@ -1,0 +1,353 @@
+*{
+    outline: 0 !important;
+
+}
+/*olor: #00e0d0 */
+
+/*Loading Fonts*/
+
+@font-face{
+    font-family: "LuxiaDisplay";
+    src:url(..fonts/Luxia-Semi-BoldDisplay.otf);
+}
+
+@font-face {
+    font-family: "PlayFair-Regular";
+    src:url('../fonts/PlayfairDisplay-Regular.otf');
+}
+@font-face {
+    font-family: "PlayFair-Black";
+    src:url('../fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src:url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src:url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src:url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "Roboto-Black";
+    src:url('../fonts/Roboto-Black.ttf');
+}
+
+
+
+/*End Loading Fonts*/
+
+.title{
+    font-family: "PlayFair-Black", serif;
+    font-size: 1.5rem;
+    letter-spacing: 2.5px;
+}
+.leads{
+    font-family: "Roboto-Light", serif;
+    font-size: 1rem;
+}
+
+.btn-secondary-outline{
+    border-color: #00e0d0;
+    color: #00e0d0;
+    transition: all .4s ease;
+}
+
+.btn-secondary-outline:hover,
+.btn-secondary-outline:active,
+.btn-secondary-outline:focus {
+    border-color: transparent;
+    background-color: #00e0d0;
+    color: #130d34;
+}
+
+.OurStory, 
+.Experties,
+.OurTeam,
+.Contact,
+.footer{
+   padding: 50px 0; 
+}
+
+.divider{
+    position: relative;
+}
+.divider::before{
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    width: 60px;
+    background-color: #00e0d0;
+    left: -50px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.header, .OurTeam{
+    background: #302950 url("../Images/treeBackground.png")  no-repeat center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.header .navbar-brand{
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.header .nav {
+    margin-top: 15px;
+}
+.header .nav .nav-link{
+    color: #fff;
+    font-family: "Roboto-Regular", serif;
+    font-size: .9rem;
+    transition: color .3s ease;
+}
+.header .nav .nav-link:hover,
+.header .nav .nav-link.active{
+    color: #00e0d0;
+}
+
+.header .header-contant .title{
+    color: #fff;
+    margin-top: 220px;
+    font-family: "LuxiaDisplay", serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+.header .header-contant .leads{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 50px auto 40px;
+    opacity: .8;
+    width: 70%;
+}
+
+.OurStory .title{
+    margin-bottom: 30px;
+}
+
+.OurStory .video-overlay{
+    background: linear-gradient(to top, rgba(38, 24, 75, .7), rgba(38, 24, 75, .9))
+                ,#302950 url(../Images/city.jpeg)  no-repeat center center;
+    height: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+.OurStory .video-overlay .play{
+    margin-top: 200px;
+    cursor: pointer;
+}
+
+.OurStory .video-overlay .title{
+    margin-top: 30px;
+    font-family: "LuxiaDisplay", serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.Experties .leads{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.Experties .divider::before{
+    background: #403463;
+    left: -2rem;
+}
+
+.b-b{
+    border-bottom: thin solid #c6c4c9;
+}
+.b-x{
+    border-right: thin solid #c6c4c9;
+    border-left: thin solid #c6c4c9;
+}
+
+
+
+.Experties .body .title{
+    font-family: "Roboto-Black", sans-serif;
+    font-size: .8rem;
+    margin-top: 15px;
+}
+.Experties .body .leads{
+    font-size: .95rem;
+}
+.Experties .body div div{
+    text-align: center;
+    height: 228px;
+    width: 350px;
+}
+
+.OurTeam{
+    color: #fff;
+    height: 850px;
+}
+
+.OurTeam .title{
+    font-size: 1.3rem;
+}
+
+.OurTeam .leads{
+    font-size: 1.2rem;
+    margin: 25px;
+}
+
+.OurTeam .img-wrapper{
+    padding: 0;
+    margin-right: 20px;
+    width: 252px;
+    border: thin solid #fff;
+    text-align: center;
+}
+
+.OurTeam .body .title{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: .9rem;
+    margin-top: 25px;
+}.OurTeam .body .leads{
+    font-family: "Roboto-Thin", sans-serif;
+    font-size: .7rem;
+    margin-top: 0;
+}
+.OurTeam .footer-section .title{
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}.OurTeam .footer-section .btn-secondary-outline{
+    width: 180px;
+}
+
+.Contact{
+    height: 700px;
+}
+
+.Contact .title{
+    color: #413d4b;
+    margin: 40px 0;
+}
+
+.Contact .form .input-box,
+.Contact .form .input-field{
+    width: 100%;
+}
+
+.Contact .form .input-field{
+    margin-bottom: 25px;
+    min-height: 45px;
+    padding-left: 22px;
+    border: thin solid #c6c4c9;
+}
+
+.Contact .form .btn-secondary-outline{
+    width: 250px;
+}
+.Contact .form .btn-secondary-outline:hover, .OurStory .btn-secondary-outline:hover{
+    color: white;
+}
+
+.Contact .c-brand img{
+    margin-bottom: 3.5rem;
+
+}
+
+
+.footer{
+    background: #302950 url("../Images/footerBackground.png")  no-repeat center center;
+    background-size: cover; 
+    color: #fff;
+}
+
+.footer .brand{
+    display: block;
+    margin: 0 25px 20px 0;  
+}
+
+.footer .leads{
+    font-family: "Roboto-Thin", sans-serif;
+    font-size: .95rem;
+}
+
+.footer .add .leads{
+    display: initial;
+    
+}.footer .add i{
+    margin-right: 20px;
+    display: inline-block;
+    
+}
+.footer .title{
+    font-family: "Roboto-Black", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.2px;
+    margin-bottom: 58px;
+}
+
+
+.footer .newsletter .input-field{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    color: #fff;
+    border: thin solid #fff;
+    padding-left: 10px;
+}
+.footer .newsletter .btn-icon{
+    width: 70px;
+    height: 46px;
+    border-radius: 0;
+    background: rgba(161, 154, 180, .7);
+    color: #fff;
+    border: none;
+    padding-left: 10px;
+}
+
+.footer .social-media{
+    margin-top: 25px;
+}.footer .social-media img{
+    margin-left: 8px;
+}
+
+
+.footer .nav .nav-link{
+    color: #fff;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: .95rem;
+}
+.footer .nav .nav-link:hover{
+    color: #c6c4c9;
+}
+
+
+.footer .c-rights{
+    margin-left: auto;
+    color: #fff;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+
+
+
